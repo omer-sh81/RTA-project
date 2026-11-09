@@ -1,0 +1,12 @@
+
+*What is this project?
+It is a simple remote command execution tool. The "Server" acts as the listener, and the "Client" connects to it. Once connected, you can send basic terminal commands through the network, the server executes them using the OS shell, and then sends the output back to the client. 
+
+*How to run it
+1.Open a terminal and run the server script first so it starts listening:
+   `python server.py`
+2.Open a second terminal and run the client:
+   `python client.py`
+3.Start typing commands (like `dir` or `ipconfig`...). 
+4.Type `exit` to close the connection gracefully.
+
